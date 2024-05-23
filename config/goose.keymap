@@ -9,11 +9,11 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
 
-#define QUICK_TAP_MS 200
-#define TAPPING_TERM_MS 150
-#define SLOW_TAPPING_TERM_MS 350
+#define QUICK_TAP_MS 175
+#define TAPPING_TERM_MS 120
+#define SLOW_TAPPING_TERM_MS 200
 #define IDLE_TIMEOUT_MS 5000
-#define REQ_IDLE_MS 125
+#define REQ_IDLE_MS 100
 
 &lt {
     // Layer toggle
