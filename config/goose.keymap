@@ -57,6 +57,7 @@
             hold-trigger-key-positions = <5 6 7 8 9 19 18 17 16 15 34 25 26 35 27 28 29 37 36>;
             hold-trigger-on-release;
         };
+
         hmr: homerow_mods_right {
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS_RIGHT_HAND";
@@ -70,6 +71,7 @@
             flavor = "balanced";
             hold-trigger-on-release;
         };
+
         ss_cw: shift_capsword {
             compatible = "zmk,behavior-tap-dance";
             label = "SHIFT_CAPSWORD";
@@ -78,6 +80,7 @@
 
             tapping-term-ms = <SLOW_TAPPING_TERM_MS>;
         };
+
         cln_scln_td: cln_scln_td {
             compatible = "zmk,behavior-tap-dance";
             label = "CLN_SCLN_TD";
@@ -126,10 +129,10 @@
 
         nav_sys {
             bindings = <
-&none      &kp LS(TAB)  &kp TAB     &kp LC(LS(TAB))  &kp LC(TAB)    &kp PG_UP  &kp H     &kp J       &kp K        &kp L
-&kp LC(A)  &none        &none       &none            &none          &kp PG_DN  &kp LEFT  &kp DOWN    &kp UP       &kp RIGHT
-&kp LC(Z)  &kp LC(X)    &kp LC(C)   &kp LC(V)        &kp LS(LC(V))  &none      &none     &none       &none        &none
-           &bootloader  &sys_reset  &trans           &tog 4         &trans     &trans    &sys_reset  &bootloader
+&none      &kp LS(TAB)  &kp TAB     &kp LC(LS(TAB))  &kp LC(TAB)    &kp PG_UP      &kp H          &kp J       &kp K        &kp L
+&kp LC(A)  &none        &none       &none            &none          &kp PG_DN      &kp LEFT       &kp DOWN    &kp UP       &kp RIGHT
+&kp LC(Z)  &kp LC(X)    &kp LC(C)   &kp LC(V)        &kp LS(LC(V))  &kp LG(LS(K))  &kp LG(LS(S))  &none       &none        &none
+           &bootloader  &sys_reset  &trans           &tog 4         &trans         &trans         &sys_reset  &bootloader
             >;
         };
 
